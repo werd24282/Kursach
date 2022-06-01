@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tovar [
+    <!ELEMENT tovar (etap*)>
+    <!ELEMENT etap (cost)>
+    <!ELEMENT cost (#PCDATA)>
+]>
+<tovar>
+  <etap>
+    <cost>309Br</cost>
+  </etap>
+  <etap>
+    <cost>699Br</cost>
+  </etap>
+  <etap>
+    <cost>499Br</cost>
+  </etap>
+  <etap>
+    <cost>829Br</cost>
+  </etap>
+  
+</tovar>
