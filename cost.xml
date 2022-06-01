@@ -7,15 +7,9 @@
 <tovar>
   <etap>
     <cost>309Br</cost>
-  </etap>
-  <etap>
     <cost1>699Br</cost1>
-  </etap>
-  <etap>
     <cost2>499Br</cost2>
+        <cost3>829Br</cost3>
   </etap>
-  <etap>
-    <cost3>829Br</cost3>
-  </etap>
-  
+
 </tovar>
