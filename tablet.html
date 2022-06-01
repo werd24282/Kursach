@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="styles.css">
+             <script type="text/javascript" src="jquery-3.6.0.js"></script>
+            <script type="text/javascript" src="jquery-3.6.0.js"></script>
+            <script type="text/javascript" src="jquery-git.min.js"></script>
+            <script type="text/javascript" src="script.js"></script>
+            <script type="text/javascript" src="cart-localstorage.min.js"></script>
+            <script language="javascript">
+
+
+                $(document).ready(function () {
+                    $.ajax({
+                        type: "GET",
+                        url: "https://raw.githubusercontent.com/werd24282/Kursach/main/cost.xml",
+                        dataType: "xml",
+                        success: xmlParser
+                    });
+                });
+                function xmlParser(xml) {
+                  $('#load').fadeOut();
+                    $(xml).find("etap").each(function () {
+                        $(".xm").append("" +$(this).find("cost").text());
+                        $(".xm1").append("" +$(this).find("cost1").text());
+                        $(".xm2").append("" +$(this).find("cost2").text());
+                        $(".xm3").append("" +$(this).find("cost3").text());
+                        $(".etap").fadeIn(1000);
+                
+                    });
+                  }
+                </script>
+
+    </head>
+<body>
+  <header>
+    <nav id='cssmenu'>
+    <div class="logo"><img src="Untitled_3-removebg-preview.svg" class="log" /><a href="#">ElTech </a></div>
+    <div id="head-mobile"></div>
+    <div class="button"></div>
+    <ul>
+    <li class='active'><a href='Glavnaya.html'>Главная</a></li>
+    <li><a href='#'>Каталог</a>
+       <ul>
+          <li><a href='#'>Бытовая техника</a>
+             <ul>
+                <li><a href='fridge.html'>Холодильник</a></li>
+                <li><a href='washingmachine.html'>Стиральная машина</a></li>
+             </ul>
+          </li>
+          <li><a href='#'>Цифровая техника</a>
+             <ul>
+                <li><a href='tablet.html'>Планшет</a></li>
+                <li><a href='phone.html'>Телефон</a></li>
+             </ul>
+          </li>
+       </ul>
+    </li>
+    </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="elements">
+        <div class="element">
+        <h1 style="align-self: center;">Графический планшет HUION H1060P</h1>
+        <div class="card-product-full">
+            <div  class="im"><img src="Pictures/tablet1.jpg" class="im1" /></div>
+                <div class="c-details">
+                    <h2>Характеристики</h2>
+                    <p>
+                                        Разрешение : 5080 lpi<br>
+                                        Тип манипулятора: Перо<br>
+                                        Чувствительность к нажатию: 8192 уровней<br>
+                                        Страна происхождения (производства): Китай<br>
+                                        Цвет: Черный<br>
+                                        </p>
+                                </div>
+                                <div><div class="c-details"><h2>Цена</h2><p class="xm"></p></div>
+                                <div class="c-details"><button type="button" class="btnbtn-blockbtn-primary"
+                                    onclick="incrementClick()"><i class="fas fa-shopping-cart"></i> В корзину
+                            </button></div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="element">
+                            <h1 style="align-self: center;">Планшет Lenovo Tab M8 TB-8505X</h1>
+                            <div class="card-product-full">
+                                <div class="im"><img src="Pictures/tablet2.jpg" class="im1" /></div>
+                                    <div class="c-details">
+                                        <h2>Характеристики</h2>
+                                        <p>
+                                            Экран:  8 " IPS 1280x800 пикс<br>
+                                            Процессор:  MediaTek Helio A22<br>
+                                            Версия операционной системы:  Android 9.0<br>
+                                            Память:  ОЗУ 2 ГБ , 32 ГБ<br>
+                                            Количество ядер:  4<br>
+                                            4G LTE: Да<br>
+                                                            </p>
+                                                    </div>
+                                                    <div><div class="c-details"><h2>Цена</h2><p class="xm1"></p></div>
+                                                    <div class="c-details"><button type="button" class="btnbtn-blockbtn-primary"
+                                                        onclick="incrementClick()"><i class="fas fa-shopping-cart"></i> В корзину
+                                                </button></div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            </div>
+
+
+        <div class="elements" >
+        <div class="element">
+        <h1 style="align-self: center;">Планшет Lenovo Tab M10 HD TB-X306X</h1>
+        <div class="card-product-full">
+            <div class="im"><img src="Pictures/tablet3.jpg" class="im1"  /></div>
+                <div class="c-details">
+                    <h2>Характеристики</h2>
+                    <p>
+                        Экран:  10.1 " IPS 1280x800 пикс.<br>
+                        Процессор:  MediaTek Helio P22T<br>
+                        Версия операционной системы:  Android 10.1<br>
+                        Память:  ОЗУ 4 ГБ , 64 ГБ<br>
+                        Количество ядер:  8<br>
+                        4G LTE: Да<br>
+                                        </p>
+                                </div>
+                                <div><div class="c-details"><h2>Цена</h2><p class="xm2"></p></div>
+                                <div class="c-details"><button type="button" class="btnbtn-blockbtn-primary"
+                                    onclick="incrementClick()"><i class="fas fa-shopping-cart"></i> В корзину
+                            </button></div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="element">
+                            <h1 style="align-self: center;">Планшет Lenovo Tab M10 TB-X606X</h1>
+                            <div class="card-product-full">
+                                <div class="im"><img src="Pictures/tablet4.jpg" class="im1" /></div>
+                                    <div class="c-details">
+                                        <h2>Характеристики</h2>
+                                        <p>
+                                            Экран:  10.3 " IPS 1920x1200 пикс.<br>
+                                            Процессор:  MediaTek Helio P22T<br>
+                                            Версия операционной системы:  Android 9.0<br>
+                                            Память:  ОЗУ 4 ГБ , 128 ГБ<br>
+                                            Количество ядер:  8<br>
+                                            4G LTE: Да<br>
+                                                            </p>
+                                                    </div>
+                                                    <div><div class="c-details"><h2>Цена</h2><p class="xm3"></p></div>
+                                                    <div class="c-details"><button type="button" class="btnbtn-blockbtn-primary"
+                                                        onclick="incrementClick()"><i class="fas fa-shopping-cart"></i> В корзину
+                                                </button></div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <h1>Количество товаров в корзине:</h1>
+                                            <div>
+                                                    <h1 id="counter-label">0</h1>
+                                            </div>
+                                                <div class="c-details"><button type="button" class="btnbtn-blockbtn-primary"
+                                                    onclick="resetCounter()"><i class="fas fa-shopping-cart"></i> Очистить корзину
+                                            </button></div>
+                                            </div>
+                                            <div id="gt"><img src="pngwing.com.svg"  height=80px width=80px /></div>
+  </main>
+    <footer>
+      <div style="float: left; padding-left: 2%; padding-top: 2%; padding-bottom: 2%;" ><ul style="font-size: 30px; color: lightgray">Контакты:</ul>
+        <ul style="font-size: 25px">
+          <li><a href="https://vk.com/id613216044" style=" color: lightgray">VK</a></li>
+          <li><a href="https://github.com/werd24282" style=" color: lightgray">Git Hub</a></li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>
