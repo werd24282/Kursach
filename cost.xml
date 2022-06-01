@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tovar [
     <!ELEMENT tovar (etap*)>
-    <!ELEMENT etap (cost)>
+    <!ELEMENT etap (cost, cost1, cost2, cost3)>
     <!ELEMENT cost (#PCDATA)>
 ]>
 <tovar>
@@ -9,13 +9,13 @@
     <cost>309Br</cost>
   </etap>
   <etap>
-    <cost>699Br</cost>
+    <cost1>699Br</cost1>
   </etap>
   <etap>
-    <cost>499Br</cost>
+    <cost2>499Br</cost2>
   </etap>
   <etap>
-    <cost>829Br</cost>
+    <cost3>829Br</cost3>
   </etap>
   
 </tovar>
